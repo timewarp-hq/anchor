@@ -15,7 +15,7 @@ pub fn gen_internal_mod(idl: &Idl) -> proc_macro2::TokenStream {
 
     quote! {
         #[doc(hidden)]
-        mod internal {
+        pub mod internal {
             use super::*;
 
             #internal_args_mod
